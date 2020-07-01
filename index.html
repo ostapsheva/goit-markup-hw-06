@@ -59,7 +59,7 @@
 			<section class="hero">
 				<div class="hero-content">
 					<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-					<button class="hero-button" type="button">Заказать услугу</button>
+					<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 			<!--Особенности-->
@@ -432,5 +432,24 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="form-close-button" data-modal-close>
+					<svg class="form-close-icon" width="11" height="11">
+						<use href="./images/symbol-defs.svg#close-icon"></use>
+					</svg>
+				</button>
+				<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+				<form>
+					<input class="form-input" type="text" name="form-name" placeholder="Имя" required />
+					<input class="form-input" type="tel" name="form-tel" placeholder="Телефон" required />
+					<input class="form-input" type="email" name="form-email" placeholder="Почта" required />
+					<textarea class="form-input-comment" name="comment" rows="50" placeholder="Комментарий"></textarea>
+					<!-- <input class="form-input-terms" type="checkbox" name="form-terms" required /> -->
+					<button class="form-send-button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
