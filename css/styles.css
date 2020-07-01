@@ -490,10 +490,10 @@ a {
 .footer-links:focus {
 	background-color: var(--accent-color);
 }
-.mail-subscribe {
+.mail-subscribe-container {
 	width: calc((100% - 30px * 1) / 2);
 }
-.subscribe {
+.subscribe-title {
 	display: block;
 	margin-bottom: 20px;
 	font-weight: 700;
@@ -501,7 +501,28 @@ a {
 	text-transform: uppercase;
 	color: var(--primary-white-color);
 }
-.footer-button {
+.subscribe-form {
+	display: flex;
+}
+.subscribe-input {
+	width: 358px;
+	height: 50px;
+	padding: 15px 16px;
+	margin-right: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	background-color: var(--footer-background-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+	color: var(--primary-white-color);
+}
+.subscribe-input::placeholder {
+	color: var(--footer-secondary-text-color);
+}
+.subscribe-button {
 	display: flex;
 	align-items: center;
 	border-radius: 4px;
@@ -519,12 +540,12 @@ a {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-delay: 0;
 }
-.footer-button-icon {
+.subscribe-button-icon {
 	margin-left: 10px;
 	fill: currentColor;
 }
-.footer-button:hover,
-.fotter-button:focus {
+.subscribe-button:hover,
+.subscribe-button:focus {
 	color: var(--accent-color);
 	background-color: var(--primary-white-color);
 }
