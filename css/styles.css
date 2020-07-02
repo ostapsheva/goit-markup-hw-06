@@ -831,13 +831,31 @@ textarea {
 	text-align: center;
 	margin-bottom: 30px;
 }
-/* .form-checkbox-input {
+.form-checkbox-input {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-} */
+}
+.checkbox-icon {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	border: 2px solid #212121;
+	border-radius: 2px;
+	margin-right: 5px;
+}
+.form-checkbox-input:checked + .checkbox-icon {
+	background-image: url(../images/form/checkbox-icon.svg);
+	border-color: transparent;
+	background-color: var(--accent-color);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 .form-checkbox-text {
+	display: inline-block;
+	margin: 0px;
 	text-align: center;
+	vertical-align: text-bottom;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1.71;
