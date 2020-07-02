@@ -846,7 +846,7 @@ textarea {
 }
 .form-checkbox-input:checked + .checkbox-icon {
 	background-image: url(../images/form/checkbox-icon.svg);
-	border-color: transparent;
+	border: none;
 	background-color: var(--accent-color);
 	background-size: contain;
 	background-repeat: no-repeat;
