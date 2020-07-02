@@ -441,11 +441,38 @@
 				</button>
 				<p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
 				<form>
-					<input class="form-input" type="text" name="form-name" placeholder="Имя" required />
-					<input class="form-input" type="tel" name="form-tel" placeholder="Телефон" required />
-					<input class="form-input" type="email" name="form-email" placeholder="Почта" required />
-					<textarea class="form-input-comment" name="comment" rows="50" placeholder="Комментарий"></textarea>
-					<!-- <input class="form-input-terms" type="checkbox" name="form-terms" required /> -->
+					<label class="form-input-container">
+						<svg class="form-icon" width="12" height="12">
+							<use href="./images/symbol-defs.svg#form-name-icon"></use>
+						</svg>
+						<span class="form-text">Имя</span>
+						<input class="form-input" type="text" name="form-name" placeholder=" " required />
+					</label>
+					<label class="form-input-container">
+						<svg class="form-icon" width="13" height="13">
+							<use href="./images/symbol-defs.svg#form-phone-icon"></use>
+						</svg>
+						<span class="form-text">Телефон</span>
+						<input class="form-input" type="tel" name="form-tel" placeholder=" " required />
+					</label>
+					<label class="form-input-container">
+						<svg class="form-icon" width="15" height="12">
+							<use href="./images/symbol-defs.svg#form-mail-icon"></use>
+						</svg>
+						<span class="form-text">Почта</span>
+						<input class="form-input" type="email" name="form-email" placeholder=" " required />
+					</label>
+					<label class="form-comment-container">
+						<span class="form-comment-text">Комментарий</span>
+						<textarea class="form-input-comment" name="comment" rows="50" placeholder=" "></textarea>
+					</label>
+					<label class="form-checkbox-container">
+						<input class="form-checkbox-input" type="checkbox" name="form-terms" required />
+						<span class="form-checkbox-text">
+							Соглашаюсь с рассылкой и принимаю
+							<a class="form-checkbox-link" href="#">Условия договора</a>
+						</span>
+					</label>
 					<button class="form-send-button" type="submit">Отправить</button>
 				</form>
 			</div>
