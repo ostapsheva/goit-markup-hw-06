@@ -762,20 +762,14 @@ textarea {
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1),
 		left 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-input-container:focus-within .form-text {
+.form-input-container:focus-within .form-text,
+.form-input:not(:placeholder-shown) + .form-text {
 	font-size: 12px;
 	line-height: 1.17;
 	color: var(--accent-color);
 	top: -16px;
 	left: 16px;
 }
-/* .form-input-container:not(:placeholder-shown) .form-text {
-	font-size: 12px;
-	line-height: 1.17;
-	color: var(--accent-color);
-	top: -16px;
-	left: 16px;
-} */
 .form-input {
 	width: 100%;
 	height: 40px;
@@ -810,7 +804,8 @@ textarea {
 
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form-comment-container:focus-within .form-comment-text {
+.form-comment-container:focus-within .form-comment-text,
+.form-input-comment:not(:placeholder-shown) + .form-comment-text {
 	font-size: 12px;
 	line-height: 1.17;
 	color: var(--accent-color);
@@ -842,7 +837,6 @@ textarea {
 	appearance: none;
 } */
 .form-checkbox-text {
-	/* display: block; */
 	text-align: center;
 	font-weight: 400;
 	font-size: 14px;
